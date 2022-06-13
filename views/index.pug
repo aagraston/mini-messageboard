@@ -4,11 +4,11 @@ block content
   h1= title
   p Welcome to #{title}
 
-div(class='message-board-container') 
-  div(class='message-board')
-    each msg in messages 
-      div(class='message') 
-        div(class='message-text') msg.text 
-        div(class='message-username') msg.user
-        div(class='message-date-added') msg.added
+  div(class='message-board-container') 
+    div(class='message-board')
+      each msg in messages 
+        div(class='message') 
+          div(class='message-text') #{msg.text} 
+          div(class='message-username') #{msg.user}
+          div(class='message-date-added') #{msg.added}
 
